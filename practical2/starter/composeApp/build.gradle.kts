@@ -106,7 +106,7 @@ compose.desktop {
 }
 
 buildkonfig {
-    packageName = "com.myapplication"
+    packageName = "com.jetbrains.weatherapp"
     objectName = "ApiKeyConfig"
     exposeObjectWithName = "Config"
 
