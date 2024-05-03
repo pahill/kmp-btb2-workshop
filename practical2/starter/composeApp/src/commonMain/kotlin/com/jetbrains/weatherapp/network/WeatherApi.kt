@@ -2,6 +2,7 @@ package com.jetbrains.weatherapp.network
 
 import io.ktor.client.HttpClient
 import com.jetbrains.weatherapp.weather.Weather
+import com.jetbrains.weatherapp.Config
 
 class WeatherApi {
     private val httpClient = HttpClient {
@@ -10,6 +11,6 @@ class WeatherApi {
 
     suspend fun getWeather(lat: Double, long: Double): Weather {
         TODO() // Call the webservice and get the body
-        // The URL is: https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${long}&appid=${Config.WeatherApiKey}&units=metric
+        "https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${long}&appid=${Config.WeatherApiKey}&units=metric"
     }
 }
