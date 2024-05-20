@@ -12,7 +12,7 @@ import kotlinx.datetime.toLocalDateTime
 import kotlin.time.Duration.Companion.seconds
 
 class TimeApi {
-    private val clockTime = // Create your flow using a flow builder that emits the formatted
+    private val clockTime = // TODO: Create your flow using a flow builder that emits the formatted
     //current time and waits a second
 
     val actualTime = clockTime.stateIn(GlobalScope, SharingStarted.Eagerly, "N/A")
